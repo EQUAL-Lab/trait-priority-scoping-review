@@ -2,7 +2,7 @@
 ## This is the repository for the paper, containing data and codes. 
 
 #### <ins> Working paper <ins>
-The working paper for this work is available in [Research Square] (https://assets.researchsquare.com/files/rs-2548847/v1/d6203fae-d0b4-4df5-90b1-35ea5fb5b5c9.pdf?c=1680300131).
+The working paper for this work is available in [Research Square](https://assets.researchsquare.com/files/rs-2548847/v1/d6203fae-d0b4-4df5-90b1-35ea5fb5b5c9.pdf?c=1680300131).
 
 #### <ins> Abstract of the paper <ins>
 
