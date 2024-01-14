@@ -1,0 +1,367 @@
+p_id,crop_1_cat,year,donor
+0,RTB,2014,West Africa Centre for Crop Improvement (WACCI);University of Ghana;National Root Crops Research Institute (NRCRI) Nigeria
+1,RTB,2021,Bill & Melinda Gates Foundation;European Union;African Union
+2,legumes,2008,Wageningen University;Netherlands and the Dutch Ministry for International Cooperation (DGIS);AfricaNUANCES
+3,cereal,2020,Adet Agricultural Research Center;Amhara Agricultural Research Institute;AGP-II project;CGIAR ICARDA
+4,Vegetable,2004,Alabama Department of Agriculture and Industries;USDA Federal-State Marketing Improvement Program;Alabama Agricultural Experiment Station
+5,cereal,2000,American Association for University Women;Arizona Agricultural Experiment Station;Association for Women in Science;UC Santa Barbara;CGIAR CIMMYT;Sigma Xi;Fulbright Commission;USAID
+6,RTB,2011,International Policy Research Institute;Wageningen University;Banana Research Program of National Agricultural Research Organization
+7,Other,2021,"Ethiopian Agricultural Transformation Agency;Bill & Melinda Gates Foundation;Bilateral Ethiopian–Netherlands Effort for Food, Income, and Trade"
+8,cereal,2021,USAID Economic Growth Project;CGIAR Program on Rice;Bill & Melinda Gates Foundation
+9,cereal,2022,UK Department for International Development (DFID);CGIAR Research Program on Maize (MAIZE);Bill & Melinda Gates Foundation
+10,RTB,2022,"CGIAR Research Program on Roots, Tubers, and Bananas (RTB);CGIAR Trust Fund;Bill & Melinda Gates Foundation;CIRAD"
+11,RTB,2020,RTB Foods;CIRAD;Bill & Melinda Gates Foundation
+12,legumes,2021,Global Affairs Canada;Swiss Agency for Development Cooperation (SDC);Bill & Melinda Gates Foundation
+13,RTB,2011,McKnight Foundation;UK Department for International Development (DFID);Biological and Biotechnology Science Research Council (BBSRC)
+14,RTB,2021,CGIAR International Institute of Tropical Agriculture (IITA);NRCRI
+15,cereal,2008,Secretary of Agriculture;Department of Environmental Affairs of the Ministry of Natural Resources in Malawi;Canadian International Development Agency
+16,RTB,2019,Government of Spain;FONTAGRO;CGIAR;Austrian Development Agency;European Union;CGIAR
+17,cereal,2022,Bill & Melinda Gates Foundation;USAID;CGIAR
+18,cereal,2009,UK Department for International Development (DFID);NARC;CGIAR CYMMIT
+19,cereal,2020,Lee Foundation;Australian governement research training program;CGIAR IRRI;Bill & Melinda Gates Foundation
+20,cereal,2022,USAID;ACIAR;CGIAR Research Program grant for Grain Legumes and Dryland Cereals;Biotechnology and Biological Sciences Research Council (BBSRC);CGIAR
+21,RTB,2018,CGIAR International Potato Center;Austrain Development Agency (ADA);FAO
+22,RTB,2015,Cornell University;Richard Bradfield Research Award;First Presbyterian Church (Ithaca – International Hunger);CGIAR International Potato Center
+23,RTB,2014,Rockefeller Foundation;CGIAR International Institute of Tropical Agriculture (IITA);Gatsby Charitable Foundation
+24,cereal,2007,Africa Rice Center;University of Hohenheim;German Ministry of Economic Cooperation (BEAF)
+25,legumes,2021,CGIAR  International Center of Tropical Agriculture (CIAT);Pan Africa Bean Research Alliance (PABRA);Government of Zimbabwe
+26,legumes,2016,Bill & Melinda Gates Foundation;Tropical Legumes- III (TL-III);Groundnut Up scaling Projects under the CRP-Grain Legumes
+27,RTB,2018,International Foundation for Science;CORAF;CGIAR International Institute of Tropical Agriculture (IITA)
+28,cereal,2003,International Sorghum and Millet Collaborative Research Support Program (INTSORMIL);ICRISAT;INRAN
+29,cereal,2019,Alliance for a Green Revolution in Africa (AGRA);African Centre for Crop Improvement (ACCI);International Foundation for Science
+30,RTB,2008,National Potato Research Center of the Kenya Agricultural Research Institute;CGIAR International Potato Center;Kachwekano Zonal Agricultural Research and Development Institute
+31,RTB,2016,Japan Society for the Production of Science;Ronpaku Fellowship Program;Kyoto Univerity;CGIAR International Institute of Tropical Agriculture (IITA)
+32,cereal,2022,"International Atomic Energy Agency;University of KwaZulu-Natal;Ministry of Agriculture, Water and Land Reform Namibia"
+33,RTB,2013,Alliance for a Green Revolution in Africa (AGRA);NARO Uganda
+34,legumes,2013,McKnight Foundation;African Economic Research Consortium (AERC)
+35,cereal,2016,African Development Bank (ADB);Government of Japan
+36,RTB,2010,Rockefeller Foundation;Government of Uganda
+37,RTB,2016,Alliance for a Green Revolution in Africa (AGRA);African Centre for Crop Improvement (ACCI)
+38,cereal,2017,Alliance for a Green Revolution in Africa (AGRA);African Centre for Crop Improvement (ACCI)
+39,RTB,2018,Alliance for a Green Revolution in Africa (AGRA);African Centre for Crop Improvement (ACCI)
+40,cereal,2013,Rockefeller Foundation;African Centre for Crop Improvement (ACCI)
+41,cereal,2020,AfricaRice;African Development Bank (ADB)
+42,RTB,2007,Federal Government of Nigeria;AGIP Oil company
+43,cereal,2016,Alliance for a Green Revolution in Africa (AGRA);Agricultural Research Council
+44,cereal,2008,Africa Rice Center;AMREC
+45,legumes,2004,UK Department for International Development (DFID);Asian Vegetable Research and Development Centre
+46,cereal,2021,Lee Foundation;Australian Government
+47,legumes,2022,Bill & Melinda Gates Foundation;Bayer Crop Science
+48,legumes,2017,CGIAR;Bilateral agreements
+49,cereal,2016,Global Rice Science Partnership;Bill & Melinda Gates Foundation
+50,RTB,2018,Ministry of Higher Education and Scientific Research of Benin;Bill & Melinda Gates Foundation
+51,RTB,2023,Swedish University of Agricultural Sciences;Bill & Melinda Gates Foundation
+52,RTB,2018,UK Department for International Development (DFID);Bill & Melinda Gates Foundation
+53,legumes,2019,SARI (South Agricultural Research Institute);Bonga Agricultural Research Center
+54,cereal,2016,Bill & Melinda Gates Foundation;CGIAR
+55,RTB,2021,Bangladesh Agriculture Research Institute;CGIAR Center for International Potato
+56,RTB,2015,Cornell University;CGIAR Center for International Potato
+57,RTB,2018,HarvestPlus;CGIAR Center for International Potato
+58,RTB,2019,"CGIAR Research Program on Roots, Tubers and Bananas (RTB);CGIAR Fund Donors"
+59,cereal,2015,CGIAR CIMMYT;CGIAR International Institute of Tropical Agriculture (IITA)
+60,cereal,2020,Indian Council of Agricultural Research;CGIAR IRRI
+61,cereal,2013,"Uttar Pradesh Council of Agricultural Research, Lucknow;CGIAR IRRI"
+62,cereal,2017,"CGIAR Bioversity International;CGIAR research program on Climate Change, Agriculture and Food Security (CCAFS)"
+63,RTB,2020,"Bill & Melinda Gates Foundation;CGIAR Research Program on Roots, Tubers and Bananas (RTB)"
+64,RTB,2019,Bill & Melinda Gates Foundation;CGIAR Trust Fund
+65,legumes,2020,Alliance for a Green Revolution in Africa (AGRA);Chitedze Agricultural Research Station in Malawi
+66,RTB,2023,Bill & Melinda Gates Foundation;CIRAD
+67,legumes,2018,Brazilian Council for Scientific and Technological Development;Coordination for the Improvement of Higher Education Personnel
+68,legumes,2021,International Treaty on Plant Genetic Resource for Africa;Crops Research Institute
+69,RTB,2018,West Africa Agricultural Productivity Programme (WAAPP);Crops Research Institute Ghana
+70,cereal,2022,Avril Foundation;DAAD (German Academic Exchange Service)
+71,cereal,2021,ICRISAT;Department Agricultural Technical and Extension Services
+72,cereal,2023,DAAD (German Academic Exchange Service);ECONET
+73,Vegetable,2021,MoBreed;Eurpean Union
+74,RTB,2015,West Africa Agricultural Productivity Programme (WAAPP);Fonds Interprofessionnel pour la Recherche et le Conseils Agricoles (FIRCA)
+75,cereal,2007,Germany Ministry for Economic Cooperation and Development (BMZ);German Technical Cooperation (GTZ)
+76,legumes,2018,West Africa Centre for Crop Improvement (WACCI);Germany Academic Exchange Service (DAAD)
+77,cereal,2021,Amhara Agricultural Research Institute;Gondar Agricultural Research Center
+78,cereal,1996,UK Department for International Development (DFID);Government of India
+79,legumes,2010,World Bank;Government of Tanzania
+80,legumes,2021,International Fund for Agricultural Development;Government of Uganda
+81,cereal,2017,Bill & Melinda Gates Foundation;Howard G. Buffett Foundation
+82,cereal,2021,CGIAR IRRI;ICAR
+83,legumes,2014,"National Food Security Mission, Government of India;Indian Ministry of Agriculture"
+84,RTB,2015,Alliance for a Green Revolution in Africa (AGRA);International Foundation for Science (IFS)
+85,cereal,2011,CGIAR IRRI;Japan Ministry of Foreign Affairs
+86,cereal,2014,The Australian Centre for International Agricultural Research (ACIAR);Lao PDR National Agriculture and Forestry Research Institute (NAFRI)
+87,cereal,2018,National Natural Science Foundation of China;Major Program of the Key Research Institute of Chinese Ministry of Education
+88,cereal,2017,"Mexican National Council of Science and Technology;Mexican National Institute for Research on forestry, agriculture and livestock"
+89,cereal,2003,"Belgian Directorate for Development Co-operation;Ministry of Agriculture and Food Security, Tanzania"
+90,Vegetable,2012,World Vegetable Center;Ministry of Agriculture and Food Security Tanzania
+91,legumes,2017,CGIAR Climate Change Agriculture and Food Security (CCAFS)
+92,Vegetable,2019,"Italian Ministry of Agricultural, Food and Forestry Policie"
+93,cereal,2023,Africa Rice Center
+94,cereal,2022,African Seed Company Sierra Leone
+95,legumes,2022,Agricultural Growth Program II
+96,cereal,2014,Agropolis Foundation
+97,Vegetable,2021,Agropolis Foundation
+98,cereal,2006,Alexander von Humboldt Foundation
+99,cereal,2014,Alliance for a Green Revolution in Africa (AGRA)
+100,cereal,2015,Alliance for a Green Revolution in Africa (AGRA)
+101,RTB,2015,Alliance for a Green Revolution in Africa (AGRA)
+102,legumes,2015,Alliance for a Green Revolution in Africa (AGRA)
+103,legumes,2016,Alliance for a Green Revolution in Africa (AGRA)
+104,cereal,2016,Alliance for a Green Revolution in Africa (AGRA)
+105,cereal,2019,Alliance for a Green Revolution in Africa (AGRA)
+106,cereal,2019,Alliance for a Green Revolution in Africa (AGRA)
+107,cereal,2019,Alliance for a Green Revolution in Africa (AGRA)
+108,RTB,2020,Alliance for a Green Revolution in Africa (AGRA)
+109,legumes,2020,Alliance for a Green Revolution in Africa (AGRA)
+110,cereal,2020,Alliance for a Green Revolution in Africa (AGRA)
+111,cereal,2021,Alliance for a Green Revolution in Africa (AGRA)
+112,legumes,2021,Alliance for a Green Revolution in Africa (AGRA)
+113,legumes,2018,Amhara Agricultural Research Institute
+114,cereal,2022,Amhara Agricultural Research Institute
+115,legumes,2023,Amhara Agricultural Research Institute
+116,RTB,2019,Assam Rural Infrastructure and Agricultural Services Society (ARIASS) of the government of India
+117,legumes,2013,Bill & Melinda Gates Foundation
+118,cereal,2013,Bill & Melinda Gates Foundation
+119,RTB,2017,Bill & Melinda Gates Foundation
+120,cereal,2018,Bill & Melinda Gates Foundation
+121,cereal,2020,Bill & Melinda Gates Foundation
+122,RTB,2020,Bill & Melinda Gates Foundation
+123,RTB,2020,Bill & Melinda Gates Foundation
+124,RTB,2021,Bill & Melinda Gates Foundation
+125,cereal,2021,Bill & Melinda Gates Foundation
+126,RTB,2021,Bill & Melinda Gates Foundation
+127,RTB,2021,Bill & Melinda Gates Foundation
+128,cereal,2022,Bill & Melinda Gates Foundation
+129,cereal,2022,Bill & Melinda Gates Foundation
+130,cereal,2023,Bill & Melinda Gates Foundation
+131,RTB,2023,Bill & Melinda Gates Foundation
+132,Vegetable,2021,Biotechnology and Biological Sciences Research Council (BBSRC)
+133,Vegetable,2013,Brazilian Council for Scientific and Technological Development
+134,legumes,2019,Brazilian Council for Scientific and Technological Development
+135,cereal,2000,Canadian International Development Agency
+136,cereal,2001,Canadian International Development Agency
+137,cereal,2005,Canadian International Development Agency
+138,legumes,2010,Canadian International Development Agency
+139,cereal,2014,Canadian International Development Agency
+140,cereal,9999,Canadian International Development Agency
+141,legumes,2022,Carnegie Cooperation for New York through the Regional Universities Forum for Capacity Building in Agriculture (RUFORUM).
+142,Vegetable,2006,Catholic University of Murcia
+143,Vegetable,2020,CATIE
+144,Vegetable ,2015,Ceres Trust
+145,RTB,2023,CGIAR
+146,cereal,2002,CGIAR CIMMYT
+147,cereal,2003,CGIAR CIMMYT
+148,cereal,2022,CGIAR CIMMYT
+149,cereal,2009,CGIAR International Institute of Tropical Agriculture (IITA)
+150,cereal,2011,CGIAR International Institute of Tropical Agriculture (IITA)
+151,RTB,2022,CGIAR International Institute of Tropical Agriculture (IITA)
+152,RTB,2023,CGIAR International Institute of Tropical Agriculture (IITA)
+153,legumes,2018,CGIAR Research Program on Dryland Systems
+154,RTB,2021,"CGIAR Research Program on Roots, Tubers and Bananas (RTB)"
+155,RTB,2021,"CGIAR Research Program on Roots, Tubers and Bananas (RTB)"
+156,RTB,2021,"CGIAR Research Program on Roots, Tubers and Bananas (RTB)"
+157,Vegetable,2021,Chilean corporacion de fomento de la produccion
+158,Vegetable,2017,Chinese Natural Science Foundation
+159,Vegetable,2021,CONACYT
+160,Vegetable,1989,Connecticut Department of Agriculture
+161,Vegetable,2019,Consorci del Parc Natural de la Serra de Collserola
+162,RTB,2012,Consortium for Improving Agriculture-based Livelihoods in Central Africa
+163,cereal,2007,Cooperative Research Center for Sustainable Rice Production
+164,cereal,2010,"Crop, Aromatic and Medicinal Plant Biodiversity Research and Development Institute"
+165,cereal,2021,CropTrust
+166,legumes,2021,DAAD (German Academic Exchange Service)
+167,cereal,2015,Danish International Development Agency (DANIDA)
+168,cereal,2000,Department for International Development (DFID)
+169,cereal,2001,Department for International Development (DFID)
+170,cereal,2001,Department for International Development (DFID)
+171,cereal,2001,Department for International Development (DFID)
+172,cereal,2009,Department for International Development (DFID)
+173,cereal,2000,Der Bundesminister für Wirtschaftliche Zusammenarbeit (BMZ)
+174,RTB,2006,Dutch Directorate General for International Cooperation
+175,RTB,2022,EMATER-MG
+176,legumes,2019,Ethiopian Institute of Agricultural Research
+177,Vegetable,2006,European Union
+178,Vegetable,2010,European Union
+179,Vegetable,2010,European Union
+180,legumes,2011,European Union
+181,Vegetable,2014,European Union
+182,RTB,2017,European Union
+183,legumes,2020,European Union
+184,Vegetable,2021,European Union
+185,Vegetable,2021,European Union
+186,RTB,2021,European Union
+187,cereal,2010,FFEM (Fond Francais pour l'Environment Mondial)
+188,cereal,2022,Fondazione Cariplo
+189,Vegetable,2021,FP18-HORTICULT-CIG
+190,RTB,2015,French ANR SYSTERRA
+191,cereal,2021,"French Institute for Sustainable Development, JEAI-GRAB"
+192,Vegetable,2003,French Ministry of Research and Technology
+193,cereal,2022,German Federal Ministry for Economic Cooperation and Development (BMZ)
+194,cereal,2023,German Federal Ministry for Education and Research (BMBF)
+195,cereal,2013,German Federal Ministry for the Economic Cooperation and Development (BMZ)
+196,legumes,2015,Government of the Republic of Namibia
+197,legumes,2002,Grains Research Committee of Western Australia
+198,RTB,2017,Helen Keller International (HKI)
+199,cereal,1996,ICRISAT
+200,legumes,1997,ICRISAT
+201,legumes,2008,ICRISAT
+202,cereal,2018,ICRISAT
+203,Vegetable,2021,IFAPA
+204,Vegetable,2017,Indonesian Centre for Horticulture Research and Development
+205,Vegetable,2021,INIA
+206,RTB,2006,INIBAP
+207,Vegetable,2011,International Service for Acquisiion of Agri-Biotech Applications
+208,legumes,2021,"International Treaty on Plant Genetic Resources for Africa, Crops for the Future Research Center in Malaysia"
+209,legumes,2019,"Japanese Ministry of Agriculture, Forestry and Fisheries"
+210,Vegetable,2021,Khairun University
+211,cereal,2022,Korea Program for International Cooperation in Agricul- tural Technology (KOPIA)
+212,Vegetable,2021,"Laboratory of Biotechnology, Genetic resources, Animal and Plant Breeding (BIORAVE)"
+213,Vegetable,2005,McKnight Foundation
+214,cereal,2005,McKnight Foundation
+215,legumes,2020,McKnight Foundation
+216,Vegetable,2011,"Ministry of Agriculture, Livesotck, Fisheries of Catalonia"
+217,Vegetable,2018,"Ministry of Agriculture, Livesotck, Fisheries of Catalonia"
+218,legumes,2021,"Ministry of Agriculture, Water and Land reform"
+219,Vegetable,2017,Ministry of Higher Education and Scientific Research of Benin
+220,cereal,2018,Ministry of Science and Technology of the Government of India
+398,RTB,2007,National Agricultural Research Organization (NARO)
+399,Vegetable,2022,National Council for Scientific and Technological Development
+400,Other,2017,USAID
+401,cereal,2020,National Natural Science Foundation of China
+402,cereal,2019,National Research Foundation (NRF) in  South Africa
+403,legumes,2018,New Alliance Trust
+404,Vegetable,2011,New Varieties Development and Management Corporation (Florida)
+410,RTB,2014,Norman E. Borlaug Leadership Enhancement in Agriculture Program
+411,cereal,2008,Norwegian Agency for Development Cooperation
+412,Vegetable,2015,Organic Farming Office of the Italian Ministry of Agricultural Policies
+413,cereal,2007,Pakistan Agricultural Research Council
+414,cereal,2008,PartiCGIAR International Potato Centeratory Research and Gender Analysis (PRGA)
+415,Vegetable,2011,Pear Bureau Northwest
+416,cereal,2005,Department for International Development (DFID)
+417,cereal,2011,Portuguese Foundation for Science (FCT)
+418,cereal,2018,"Rashtriya Krishi Vikas Yojana (RKVY, SKAGR-RKVY-1)  India"
+419,cereal,2022,Research Council of Norway
+420,cereal,2023,"Research Organization for Governance, Economy and Community Welfare, National Research & Innovation of Indonesia, Faculty of Agriculture"
+421,RTB,1992,Rockefeller Foundation
+422,cereal,1995,Rockefeller Foundation
+423,legumes,2002,Rockefeller Foundation
+424,legumes,2006,Rockefeller Foundation
+425,cereal,2008,Rockefeller Foundation
+426,cereal,2010,Rockefeller Foundation
+427,RTB,2021,RTB Foods
+428,RTB,2021,RTB Foods
+429,cereal,2017,Sant'Anna School of Advanced Studies
+430,legumes,2022,SARI (South Agricultural Research Institute)
+431,cereal,2016,Savanna Agricultural Research Institute (SARI)
+432,RTB,2021,Social Science Foundation in China
+433,Vegetable,2019,USDA
+434,cereal,2020,Srinakharinwirot University
+435,Other,2016,Sugar Corporation of Ethiopia
+436,RTB,2015,Swedish International Development Agency (Sida)
+437,cereal,2007,Swiss Agency for Development and Cooperation (SDC)
+438,cereal,2009,Swiss Agency for Development and Cooperation (SDC)
+439,RTB,1997,Swiss Development Corporation
+440,Vegetable,2018,Syngenta
+441,cereal,2011,"Syngenta Foundation for Sustainable Development, CIMMYT"
+442,Vegetable,2019,Syngenta Seeds
+443,RTB,2021,TEAGASC Ireland
+444,cereal,2019,"Technology Innovation Agency, Govan Mbeki Research and Development Centre at University of Fort Hare"
+445,legumes,2020,Alliance for a Green Revolution in Africa (AGRA)
+446,RTB,2017,Alliance for a Green Revolution in Africa (AGRA)
+447,RTB,2008,the ARC and Southern Africa Root Crops Research Network (SARRNET)
+448,RTB,2015,"CGIAR Research Program on Roots, Tubers and Bananas (RTB)"
+449,cereal,2007,Dutch ministry for development cooperation (DGIS)
+450,legumes,2018,ICRISAT
+451,cereal,2008,McKnight Foundation
+452,Vegetable,2018,USDA
+453,RTB,2017,UEMOA (Economic and Monetary Union of West Africa)
+454,legumes,2019,"UGC Research Project, New Delhi"
+455,cereal,1996,UK Department for International Development (DFID)
+456,cereal,2002,UK Department for International Development (DFID)
+457,cereal,2003,UK Department for International Development (DFID)
+458,legumes,2006,UK Department for International Development (DFID)
+459,cereal,2005,UK Department for International Development (DFID)
+460,cereal,2001,UK Department for International Development (DFID)
+461,cereal,2004,UK Department for International Development (DFID)
+462,RTB,2006,UK Department for International Development (DFID)
+463,cereal,2007,UK Department for International Development (DFID)
+464,RTB,2008,UK Department for International Development (DFID)
+465,legumes,2014,UK Department for International Development (DFID)
+466,cereal,2005,UK Department for International Development (DFID)
+467,legumes,2005,USAID
+468,cereal,2017,USAID
+469,legumes,2009,USAID
+470,cereal,2007,University of Alberta
+471,cereal,2002,"University of Arkansas Rice Processing Program, U.S. rice industry"
+472,RTB,2014,University of Mohaghegh Ard- abili (UMA).
+473,RTB,2022,University of Rwanda
+474,cereal,2015,"UNOPS-LIFT, MERCY CORPS, GRET, Welthungerhilllife-WHH"
+475,legumes,2004,USAID
+476,legumes,2007,USAID
+477,Vegetable,2016,USAID
+478,legumes,2022,USAID
+479,legumes,2017,"USAID, Feed the Future Innovation Lab for Collaborative Research on Grain Legumes"
+480,Vegetable,2020,USDA
+481,Vegetable,2015,USDA
+482,Other,2020,USDA
+483,cereal,2021,USDA
+484,cereal,2021,USDA
+485,legumes,2018,WAAPP/PPAAO
+486,RTB,2016,Wageningen University
+487,RTB,2007,Walter Hochstrasser Foundation
+488,cereal,1995,West Africa Rice Development Association
+489,legumes,2015,Wolaita Sodo University
+490,RTB,2013,Wageningen University;NUFFIC
+491,cereal,1991,CONACYT;NSF Grant
+492,cereal,2007,INIAP;PREDUZA
+493,RTB,2012,"Universidad Nacional de Mar del Plata, Argentina;Instituto Nacional de Tecnología Agropecuaria (INTA)"
+494,legumes,2022,ICRISAT;Regional Universities Forum for Capacity Building in Agriculture (RUFORUM)
+495,RTB,2012,Melinda Gates Foundation;Rockefeller Foundation
+496,RTB,2016,"CGIAR Climate Change Agriculture and Food Security (CCAFS);CGIAR Research Program on Roots, Tubers and Bananas (RTB)"
+497,RTB,2021,MasterCard Foundation;RUFORUM
+498,cereal,2009,UK Department for International Development (DFID);Swiss Agency for Development Cooperation (SDC)
+499,cereal,2001,Canadian International Development Agency;PartiCGIAR International Potato Centeratory Research and Gender Analysis
+500,cereal,2014,FFEM (Fond Francais pour l'Environment Mondial);McKnight Foundation
+501,cereal,2010,CGIAR IRRI;CGIAR IRRI
+502,RTB,2013,"West Africa Agricultural Productivity Programme (WAAPP);Crops Research Institute, Ghana"
+503,RTB,2019,Bill & Melinda;GREAT project
+504,legumes,2019,"Ministry of Agriculture, Forestry and Fisheries Japan;Generation Challenge Program"
+505,cereal,2017,"The Ministry of Foreign Affairs of Japan;The Ministry of Agriculture, Forestry and Fisheries of Japan"
+506,RTB,2004,Crop Protection Programme;The Plant Sciences Research Programme
+507,legumes,1993,Rockefeller Foundation;Swiss Agency for Development Cooperation (SDC)
+508,Vegetable,2019,USDA;The Washington State
+509,RTB,2010,Ford Foundation;The Willard Sparks Endowed Chair
+510,cereal,2018,USAID;Tuskegee University
+511,RTB,2015,Alliance for a Green Revolution in Africa (AGRA);Uganda National Banana Research Program of the National Agricultural Research Organization
+512,RTB,2020,Bill & Melinda Gates Foundation;UK Department for International Development (DFID)
+513,RTB,1980,CGIAR International Potato Center;UK Department for International Development (DFID)
+514,RTB,2022,Bill & Melinda Gates Foundation;UK Department for International Development (DFID)
+515,cereal,2019,GEF (Global Environment Facility);UNEP
+516,cereal,2021,Bill & Melinda Gates Foundation;USAID
+517,RTB,2008,USAID
+518,cereal,2014,Department for International Development (DFID);CORAF
+519,cereal,2018,German Federal Ministry for Education and Research (BMBF);Zambia Ministry of Agriculture
+520,legumes,2013,Indian Institute of Pulses Research (IIPR);ICRISAT;Patancheru in Fatehpur and Kanpur Dehat districts in Uttar Pradesh
+521,cereal,2001,UK Department for International Development (DFID);OPIO;PSRP;HARP
+522,cereal,2021,DAAD (German Academic Exchange Service);SEARCA (Southeast Asian Regional Center for Graduate Study and Research in Agriculture);Research Directorate Universitas Gadjah Mada
+523,legumes,2009,Government Kenya Ministry of Agriculture;African Centre for Crop Improvement (ACCI);Rockefeller Foundation;Bill & Melinda Gates Foundation
+524,RTB,2021,French Agricultural Research Centre for International Development;Bill & Melinda Gates Foundation;RTB Foods
+525,cereal,2021,Dutch Research Council;Wageningen University;SESYNC;European Union
+526,cereal,2010,NEDA Netherlands;International Development Research Center;Swiss Agency for Development Cooperation (SDC)
+527,cereal,2021,Ministry of Research and Technology;SEARCA (Southeast Asian Regional Center for Graduate Study and Research in Agriculture) In-Country/In- Region Scholarship Programs;German Academic Exchange Service (DAAD)
+528,cereal,2012,"The Australian Centre for International Agricultural Research (ACIAR);Australian Agency for International Cooperation (AusAID);The Ministry of Agriculture, Forestry and Fisheries, Timor-Leste"
+529,RTB,2021,"CGIAR Research Program on Roots, Tubers and Bananas (RTB);CGIAR Fund Donors;USAID;Bill & Melinda Gates Foundation"
+530,legumes,2008,Canadian International Development Agency;Rockefeller Foundation;TSBF-CIAT;Wageningen University
+531,cereal,2020,Bill & Melinda Gates Foundation;Howard G. Buffett Foundation;USAID;CGIAR Research Program MAIZE
+532,cereal,2011,Rockefeller Foundation;African Centre for Crop Improvement (ACCI);University of KwaZulu-Natal
+533,Vegetable,2007,North American Strawberry Growers Association;University of Maryland;Utah Agriucultural Experiment Station;Utah State University
+534,RTB,2023,thank Teagasc–Walsh Scholarship;German International Cooperation (GIZ);Wageningen University
+535,cereal,2020,Sant'Anna School of Advanced Studies;CGIAR Bioversity International;CGIAR
+536,cereal,2021,DAAD (German Academic Exchange Service);Africa Center of Excellence Project (ACE)
+537,legumes,2012,NUFFIC;Bill & Melinda Gates Foundation
+538,RTB,2022,Global Agriculture and Food Security Program (GAFSP);CGIAR Center for International Potato
+539,cereal,2023,Bill & Melinda Gates Foundation
+540,legumes,2021,Biotechnology and Biological Sciences Research Council (BBSRC)
+541,RTB,2002,CGIAR International Potato Center
+542,Vegetable,2019,Ethiopian Institute of Agricultural Research
+543,Vegetable,2022,European Union
+544,cereal,1997,Ford Foundation
+558,RTB,2023,Bill & Melinda Gates Foundation
+559,cereal,2004,University of California
+560,cereal,2018,Vlaamse Interuniversitaire Raad
