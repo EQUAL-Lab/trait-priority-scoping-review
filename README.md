@@ -17,8 +17,10 @@ Trait prioritization studies have guided research, development, and investment d
 
 
 #### <ins> Content of the repository <ins>
-1. [Data](), which contains elaborated data for the work
-2. [R script](), which contains the scripts for the work
+1. [Data](https://github.com/TufanLab/trait-priority-scoping-review/tree/main/Data), which contains raw data for the work.
+2. [R script](https://github.com/TufanLab/trait-priority-scoping-review/tree/main/Scripts), which contains the script for the descriptive graphs and figures of the work.
+3. The map present in the paper (Fig. 2) has been done in Google Sheet and it is available at this [link](https://docs.google.com/spreadsheets/d/17Ruolp2OvU4sktRKyTJYiydF--FjHtfZnaKlgubljDU/edit?usp=sharing).
+4. Network data are in [Data](https://github.com/TufanLab/trait-priority-scoping-review/tree/main/Data), but the analysis has been done in VOsviewer [Van Eck, N. and Waltman, L. Software survey: VOSviewer, a computer program for bibliometric mapping. Scientometrics 84(2), 523-538 (2010)].
 
 #### <ins> Protocol registration <ins>
 The protocol for this scoping review has been registered in Open Science Framework in July 8, 2022 (https://osf.io/ayw8q).
