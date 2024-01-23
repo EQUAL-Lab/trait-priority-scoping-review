@@ -338,7 +338,7 @@ lit_data %>%
         axis.text.y= element_text(size = 14)) +
   theme(legend.position = "bottom") 
 
-pie_df %>%
+lit_data %>%
   filter(crop_1_cat!= "NA") %>%
   filter(crop_1_cat!= "Other") %>%
   mutate (crop_1_cat = factor (crop_1_cat,
@@ -356,8 +356,8 @@ pie_df %>%
   scale_fill_manual(values = c("#7bccc4", "#2b8cbe"), name = "Sex-disaggregated sample") +
   labs(x = "", y = "Studies (%)") +
   theme(axis.title.x = element_text(size=12),
-        axis.title.y = element_text(size=14), axis.text.x = element_text(size=14),
-        axis.text.y= element_text(size = 14)) +
+        axis.title.y = element_text(size=12), axis.text.x = element_text(size=14),
+        axis.text.y= element_text(size = 12)) +
   theme(legend.position = "bottom") 
 
 
@@ -379,7 +379,7 @@ pie_df %>%
   scale_fill_manual(values = c("#7bccc4", "#2b8cbe"), name = "Sex-disaggregated sample") +
   theme_classic() +
   labs(y = "Percentage (%)", x = "Crops category") +
-  theme(axis.title.x = element_text(size=12),
+  theme(axis.title.x = element_text(size=11),
         axis.title.y = element_text(size=12), axis.text.x = element_text(size=12),
         axis.text.y= element_text(size = 12)) +
   theme(legend.position = "bottom") 
@@ -390,17 +390,17 @@ pie_df %>%
 
 lit_data$resp_women_perc <- as.numeric(lit_data$resp_women_perc)
 
-lit_data %>%
+box <- lit_data %>%
   mutate (crop_1_cat = factor (crop_1_cat,
                           levels = c("cereal", "legumes", "Vegetable", "RTB"),
                           labels = c("Cereals", "Legumes", "Vegetable", "Root, Tubers, Bananas") 
   )) %>%
   filter(crop_1_cat != "NA") %>%
-  filter(geo_area_1 == "SSA" | geo_area_1 == "CSA") %>%
+  #filter(geo_area_1 == "SSA" | geo_area_1 == "CSA") %>%
   ggplot(aes(x=crop_1_cat, y=resp_women_perc, fill = crop_1_cat)) +
   geom_boxplot() +
-  facet_grid(~ geo_area_1) +
-  scale_fill_manual(values=c("#00AFBB","#FC4E07","#E7B800", "#52854C")) +
+  #facet_grid(~ geo_area_1) +
+  scale_fill_manual(values=c("#f0f9e8", "#bae4bc", "#7bccc4", "#2b8cbe")) +
   theme_classic() +
   theme(legend.position="") +
   theme(axis.title.x = element_text(size=12),
@@ -408,6 +408,10 @@ lit_data %>%
         axis.text.y= element_text(size = 14)) +
   labs(x = "Crop category", y = "Respondents involved in the studies who are women (%)") 
 
+boxplot(lit_data$resp_women_perc)$stats
+
+table(lit_data$sex_data)
+summary(lit_data$resp_women_perc)
 
 # ------------------------------------------------------------------------------
 # Longitudinal analysis on traits
