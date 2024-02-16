@@ -13,6 +13,7 @@ library(raster)
 library(spData)
 library(tmap) 
 library(webr)
+library(moonBook)
 library(tidyr)
 library(writexl)
 library(wordcloud)
@@ -20,6 +21,7 @@ library(RColorBrewer)
 library(wordcloud2)
 library(tm)
 library(stats)
+
 
 
 # Load the working directory [Remember to change directory according to your local path]
@@ -196,7 +198,8 @@ write_xlsx(method_new,"method_new_second_round.xlsx") # export the file
 
 # Tools - PieDonut chart
 
-tool <- read_excel("Priority Setting/PS Literature Review/Final repo - papers for data extraction /!!Data_round1_round2_merged.xlsx", sheet = "list_tools")
+tool <- read_excel("~/Library/CloudStorage/GoogleDrive-martina.occelli.91@gmail.com/My Drive/!!CORNELL/Priority Setting/PS Literature Review/Final repo - papers for data extraction /!!Data_round1_round2_merged.xlsx", 
+                   sheet = "list_tools")
 
 tool <- tool[, c(1,2,4)]
 
@@ -207,7 +210,9 @@ tool <- tool %>%
 
 PieDonut(tool, aes(broad_type, narrow_type, count = n), ratioByGroup = FALSE, r1 = 5, r2 = 6, 
          showRatioThreshold = F, addPieLabel = F,addDonutLabel = F,labelposition = 1, 
-         start = pi/3, showRatioDonut = F, showRatioPie = T, showPieName = F, donutLabelSize = 7, pieLabelSize = 7) 
+         start = pi/3, showRatioDonut = F, showRatioPie = T, showPieName = F,
+         donutLabelSize = 1.75, pieLabelSize = 3) 
+
 
 # Methods - PieDonut chart
 
@@ -222,7 +227,10 @@ method <- method %>%
 
 PieDonut(method, aes(broad_type, narrow_type, count = n), ratioByGroup = FALSE, r1 = 5, r2 = 6, 
          showRatioThreshold = F, addPieLabel = F,addDonutLabel = F,labelposition = 1, 
-         start = pi/3, showRatioDonut = F, showRatioPie = T, showPieName = F, donutLabelSize = 9, pieLabelSize = 9)
+         start = 2*pi/3, showRatioDonut = F, showRatioPie = T, showPieName = F, 
+         donutLabelSize = 1.75, pieLabelSize = 3)
+
+
 
 # ------------------------------------------------------------------------------
 # Anlysis on participatory and gender
@@ -481,6 +489,7 @@ rank_filtered %>%
         axis.text.y= element_text(size = 14)) +
   theme(legend.position = "bottom")
 
+ggsave("ED_fig_3.pdf", width = 250, units = "mm", dpi = 300)
 
 lit_data %>%
   group_by(crop_1_cat) %>%
@@ -505,7 +514,7 @@ Final_Authors_Round2 <- read_excel("Priority Setting/PS Literature Review/Rscrip
 colnames(Final_Authors_Round2)[2] = "Authors"
 colnames(Fina)[1] = "Year"
 
-write.csv(Final_Authors_Round2, "network_authors_2.csv", row.names = F) # overall 
+write.csv(Final_Authors_Round2, "network_authors_2a.csv", row.names = F) # overall 
 
 
 # Across time
@@ -551,12 +560,12 @@ colnames(network_donor)[2] = "Year"
 
 write.csv(network_donor, "network_donor_r2.csv", row.names = F) # overall 
 
-donors <- read_csv("~/Desktop/donors.csv")
+donors <- read.csv("~/Desktop/network_donor_r2a.csv", sep = ";")
 
 colnames(donors)[4] = "Authors"
 colnames(donors)[3] = "Year"
 
-write.csv(donors, "network_donor_gio.csv", row.names = F) # overall 
+write.csv(donors, "network_donor_Feb1.csv", row.names = F) # overall 
 
 # Across time
 
@@ -697,3 +706,524 @@ wordcloud(words = df$word, freq = df$freq, min.freq = 10,
           colors=brewer.pal(8, "Paired"))
 
 
+# ------------------------------------------------------------------------------
+# Assembling images at high quality
+
+#Fig 1
+library(png)
+library(magick)
+setwd("~/Library/CloudStorage/GoogleDrive-martina.occelli.91@gmail.com/My Drive/!!CORNELL/Priority Setting/PS Literature Review/Copy-editing NP/High resolution")
+
+img_cereal <- readPNG("Fig1_cereal_big.png")
+img_rtb <- readPNG("Fig1_rtb_big.png")
+img_legumes <- readPNG("Fig1_legumes_big.png")
+img_veggie <- readPNG("Fig1_veggie_big.png")
+
+cereal <- cowplot::ggdraw() + cowplot::draw_image(img_cereal)
+rtb <- cowplot::ggdraw() + cowplot::draw_image(img_rtb)
+veggie <- cowplot::ggdraw() + cowplot::draw_image(img_veggie)
+legumes <- cowplot::ggdraw() + cowplot::draw_image(img_legumes)
+
+fig_1 <- cowplot::plot_grid(rtb,cereal,legumes,veggie, nrow = 2, labels = c('(a)', '(b)', '(c)', '(d)'))
+ggsave("fig_1.pdf", width = 180, height = 180,units = "mm", dpi = 300)
+
+
+#Fig.2
+setwd("~/Library/CloudStorage/GoogleDrive-martina.occelli.91@gmail.com/My Drive/!!CORNELL/Priority Setting/PS Literature Review/Copy-editing NP/High resolution")
+
+fig_2 <- readPNG("Fig_2.png")
+
+fig_2 <- cowplot::ggdraw() + cowplot::draw_image(fig_2)
+
+fig_2 <- cowplot::plot_grid(fig_2)
+ggsave("fig_2.pdf", width = 180, height = 180,units = "mm", dpi = 300)
+
+# Fig 5
+fig_5a_png <- readPNG("5a.png")
+fig_5b_png <- readPNG("5b.png")
+
+fig_5a <- cowplot::ggdraw() + cowplot::draw_image(fig_5a_png)
+fig_5b <- cowplot::ggdraw() + cowplot::draw_image(fig_5b_png)
+
+m <- cowplot::plot_grid(fig_5a, fig_5b, nrow = 2, labels = c('(a)', '(b)'))
+
+ggsave("m.pdf", width = 180, units = "mm",dpi = 300)
+
+
+# Fig ED 4
+fig_4a <- readPNG("4a.png")
+fig_4b <- readPNG("4b.png")
+fig_4c <- readPNG("4c.png")
+
+fig_4a <- cowplot::ggdraw() + cowplot::draw_image(fig_4a)
+fig_4b <- cowplot::ggdraw() + cowplot::draw_image(fig_4b)
+fig_4c <- cowplot::ggdraw() + cowplot::draw_image(fig_4c)
+
+m <- cowplot::plot_grid(fig_4a, fig_4b, fig_4c, nrow = 3, labels = c('(1990-2000)', '(2001-2010)', '(2011-2020)'))
+
+ggsave("l.pdf",dpi = 300)
+
+
+# ------------------------------------------------------------------------------
+#Function for pie_donut
+
+PieDonutCustom <-
+  function (data,
+            mapping,
+            start = getOption("PieDonut.start",
+                              0),
+            addPieLabel = TRUE,
+            addDonutLabel = TRUE,
+            showRatioDonut = TRUE,
+            showRatioPie = TRUE,
+            ratioByGroup = TRUE,
+            showRatioThreshold = getOption("PieDonut.showRatioThreshold",
+                                           0.02),
+            labelposition = getOption("PieDonut.labelposition",
+                                      2),
+            labelpositionThreshold = 0.1,
+            r0 = getOption("PieDonut.r0",
+                           0.3),
+            r1 = getOption("PieDonut.r1", 1),
+            r2 = getOption("PieDonut.r2",
+                           1.2),
+            explode = NULL,
+            selected = NULL,
+            explodePos = 0.1,
+            color = "white",
+            pieAlpha = 0.8,
+            donutAlpha = 1,
+            maxx = NULL,
+            showPieName = TRUE,
+            showDonutName = FALSE,
+            title = NULL,
+            pieLabelSize = 4,
+            donutLabelSize = 3,
+            titlesize = 5,
+            explodePie = TRUE,
+            explodeDonut = FALSE,
+            use.label = TRUE,
+            use.labels = TRUE,
+            family = getOption("PieDonut.family", ""),
+            palette_name = "Set2")
+  {
+    (cols = colnames(data))
+    if (use.labels)
+      data = moonBook::addLabelDf(data, mapping)
+    count <- NULL
+    if ("count" %in% names(mapping))
+      count <- moonBook::getMapping(mapping, "count")
+    count
+    pies <- donuts <- NULL
+    (pies = moonBook::getMapping(mapping, "pies"))
+    if (is.null(pies))
+      (pies = moonBook::getMapping(mapping, "pie"))
+    if (is.null(pies))
+      (pies = moonBook::getMapping(mapping, "x"))
+    (donuts = moonBook::getMapping(mapping, "donuts"))
+    if (is.null(donuts))
+      (donuts = moonBook::getMapping(mapping, "donut"))
+    if (is.null(donuts))
+      (donuts = moonBook::getMapping(mapping, "y"))
+    if (!is.null(count)) {
+      df <-
+        data %>% group_by(.data[[pies]]) %>% dplyr::summarize(Freq = sum(.data[[count]]))
+      df
+    }
+    else {
+      df = data.frame(table(data[[pies]]))
+    }
+    colnames(df)[1] = pies
+    df$end = cumsum(df$Freq)
+    df$start = dplyr::lag(df$end)
+    df$start[1] = 0
+    total = sum(df$Freq)
+    df$start1 = df$start * 2 * pi / total
+    df$end1 = df$end * 2 * pi / total
+    df$start1 = df$start1 + start
+    df$end1 = df$end1 + start
+    df$focus = 0
+    if (explodePie)
+      df$focus[explode] = explodePos
+    df$mid = (df$start1 + df$end1) / 2
+    df$x = ifelse(df$focus == 0, 0, df$focus * sin(df$mid))
+    df$y = ifelse(df$focus == 0, 0, df$focus * cos(df$mid))
+    df$label = df[[pies]]
+    df$ratio = df$Freq / sum(df$Freq)
+    if (showRatioPie) {
+      df$label = ifelse(
+        df$ratio >= showRatioThreshold,
+        paste0(df$label,
+               "\n(", scales::percent(df$ratio), ")"),
+        as.character(df$label)
+      )
+    }
+    df$labelx = (r0 + r1) / 2 * sin(df$mid) + df$x
+    df$labely = (r0 + r1) / 2 * cos(df$mid) + df$y
+    if (!is.factor(df[[pies]]))
+      df[[pies]] <- factor(df[[pies]])
+    df
+    mainCol = RColorBrewer::brewer.pal(nrow(df), name = palette_name)
+    df$radius = r1
+    df$radius[df$focus != 0] = df$radius[df$focus != 0] + df$focus[df$focus !=
+                                                                     0]
+    df$hjust = ifelse((df$mid %% (2 * pi)) > pi, 1, 0)
+    df$vjust = ifelse(((df$mid %% (2 * pi)) < (pi / 2)) |
+                        (df$mid %% (2 *
+                                      pi) > (pi * 3 /
+                                               2)), 0, 1)
+    df$segx = df$radius * sin(df$mid)
+    df$segy = df$radius * cos(df$mid)
+    df$segxend = (df$radius + 0.05) * sin(df$mid)
+    df$segyend = (df$radius + 0.05) * cos(df$mid)
+    df
+    if (!is.null(donuts)) {
+      subColor = makeSubColor(mainCol, no = length(unique(data[[donuts]])))
+      subColor
+      data
+      if (!is.null(count)) {
+        df3 <- as.data.frame(data[c(donuts, pies, count)])
+        colnames(df3) = c("donut", "pie", "Freq")
+        df3
+        df3 <- eval(parse(text = "complete(df3,donut,pie)"))
+        df3$Freq[is.na(df3$Freq)] = 0
+        if (!is.factor(df3[[1]]))
+          df3[[1]] = factor(df3[[1]])
+        if (!is.factor(df3[[2]]))
+          df3[[2]] = factor(df3[[2]])
+        df3 <- df3 %>% arrange(.data$pie, .data$donut)
+        a <- df3 %>% spread(.data$pie, value = .data$Freq)
+        a = as.data.frame(a)
+        a
+        rownames(a) = a[[1]]
+        a = a[-1]
+        a
+        colnames(df3)[1:2] = c(donuts, pies)
+      }
+      else {
+        df3 = data.frame(table(data[[donuts]], data[[pies]]),
+                         stringsAsFactors = FALSE)
+        colnames(df3)[1:2] = c(donuts, pies)
+        a = table(data[[donuts]], data[[pies]])
+        a
+      }
+      a
+      df3
+      df3$group = rep(colSums(a), each = nrow(a))
+      df3$pie = rep(1:ncol(a), each = nrow(a))
+      total = sum(df3$Freq)
+      total
+      df3$ratio1 = df3$Freq / total
+      df3
+      if (ratioByGroup) {
+        df3$ratio = scales::percent(df3$Freq / df3$group)
+      }
+      else {
+        df3$ratio <- scales::percent(df3$ratio1)
+      }
+      df3$end = cumsum(df3$Freq)
+      df3
+      df3$start = dplyr::lag(df3$end)
+      df3$start[1] = 0
+      df3$start1 = df3$start * 2 * pi / total
+      df3$end1 = df3$end * 2 * pi / total
+      df3$start1 = df3$start1 + start
+      df3$end1 = df3$end1 + start
+      df3$mid = (df3$start1 + df3$end1) / 2
+      df3$focus = 0
+      if (!is.null(selected)) {
+        df3$focus[selected] = explodePos
+      }
+      else if (!is.null(explode)) {
+        selected = c()
+        for (i in 1:length(explode)) {
+          start = 1 + nrow(a) * (explode[i] - 1)
+          selected = c(selected, start:(start + nrow(a) -
+                                          1))
+        }
+        selected
+        df3$focus[selected] = explodePos
+      }
+      df3
+      df3$x = 0
+      df3$y = 0
+      df
+      if (!is.null(explode)) {
+        explode
+        for (i in 1:length(explode)) {
+          xpos = df$focus[explode[i]] * sin(df$mid[explode[i]])
+          ypos = df$focus[explode[i]] * cos(df$mid[explode[i]])
+          df3$x[df3$pie == explode[i]] = xpos
+          df3$y[df3$pie == explode[i]] = ypos
+        }
+      }
+      df3$no = 1:nrow(df3)
+      df3$label = df3[[donuts]]
+      if (showRatioDonut) {
+        if (max(nchar(levels(df3$label))) <= 2)
+          df3$label = paste0(df3$label, "(", df3$ratio,
+                             ")")
+        else
+          df3$label = paste0(df3$label, "\n(", df3$ratio,
+                             ")")
+      }
+      df3$label[df3$ratio1 == 0] = ""
+      df3$label[df3$ratio1 < showRatioThreshold] = ""
+      df3$hjust = ifelse((df3$mid %% (2 * pi)) > pi, 1, 0)
+      df3$vjust = ifelse(((df3$mid %% (2 * pi)) < (pi / 2)) |
+                           (df3$mid %% (2 *
+                                          pi) > (pi * 3 /
+                                                   2)), 0, 1)
+      df3$no = factor(df3$no)
+      df3
+      labelposition
+      if (labelposition > 0) {
+        df3$radius = r2
+        if (explodeDonut)
+          df3$radius[df3$focus != 0] = df3$radius[df3$focus !=
+                                                    0] + df3$focus[df3$focus != 0]
+        df3$segx = df3$radius * sin(df3$mid) + df3$x
+        df3$segy = df3$radius * cos(df3$mid) + df3$y
+        df3$segxend = (df3$radius + 0.05) * sin(df3$mid) +
+          df3$x
+        df3$segyend = (df3$radius + 0.05) * cos(df3$mid) +
+          df3$y
+        if (labelposition == 2)
+          df3$radius = (r1 + r2) / 2
+        df3$labelx = (df3$radius) * sin(df3$mid) + df3$x
+        df3$labely = (df3$radius) * cos(df3$mid) + df3$y
+      }
+      else {
+        df3$radius = (r1 + r2) / 2
+        if (explodeDonut)
+          df3$radius[df3$focus != 0] = df3$radius[df3$focus !=
+                                                    0] + df3$focus[df3$focus != 0]
+        df3$labelx = df3$radius * sin(df3$mid) + df3$x
+        df3$labely = df3$radius * cos(df3$mid) + df3$y
+      }
+      df3$segx[df3$ratio1 == 0] = 0
+      df3$segxend[df3$ratio1 == 0] = 0
+      df3$segy[df3$ratio1 == 0] = 0
+      df3$segyend[df3$ratio1 == 0] = 0
+      if (labelposition == 0) {
+        df3$segx[df3$ratio1 < showRatioThreshold] = 0
+        df3$segxend[df3$ratio1 < showRatioThreshold] = 0
+        df3$segy[df3$ratio1 < showRatioThreshold] = 0
+        df3$segyend[df3$ratio1 < showRatioThreshold] = 0
+      }
+      df3
+      del = which(df3$Freq == 0)
+      del
+      if (length(del) > 0)
+        subColor <- subColor[-del]
+      subColor
+    }
+    p <- ggplot() + ggforce::theme_no_axes() + coord_fixed()
+    if (is.null(maxx)) {
+      r3 = r2 + 0.3
+    }
+    else {
+      r3 = maxx
+    }
+    p1 <- p + ggforce::geom_arc_bar(
+      aes_string(
+        x0 = "x",
+        y0 = "y",
+        r0 = as.character(r0),
+        r = as.character(r1),
+        start = "start1",
+        end = "end1",
+        fill = pies
+      ),
+      alpha = pieAlpha,
+      color = color,
+      data = df
+    ) + transparent() + scale_fill_manual(values = mainCol) +
+      xlim(r3 * c(-1, 1)) + ylim(r3 * c(-1, 1)) + guides(fill = FALSE)
+    if ((labelposition == 1) & (is.null(donuts))) {
+      p1 <- p1 + geom_segment(aes_string(
+        x = "segx",
+        y = "segy",
+        xend = "segxend",
+        yend = "segyend"
+      ),
+      data = df) + geom_text(
+        aes_string(
+          x = "segxend",
+          y = "segyend",
+          label = "label",
+          hjust = "hjust",
+          vjust = "vjust"
+        ),
+        size = pieLabelSize,
+        data = df,
+        family = family
+      )
+    }
+    else if ((labelposition == 2) & (is.null(donuts))) {
+      p1 <- p1 + geom_segment(aes_string(
+        x = "segx",
+        y = "segy",
+        xend = "segxend",
+        yend = "segyend"
+      ),
+      data = df[df$ratio < labelpositionThreshold,]) +
+        geom_text(
+          aes_string(
+            x = "segxend",
+            y = "segyend",
+            label = "label",
+            hjust = "hjust",
+            vjust = "vjust"
+          ),
+          size = pieLabelSize,
+          data = df[df$ratio < labelpositionThreshold,],
+          family = family
+        ) + geom_text(
+          aes_string(x = "labelx",
+                     y = "labely", label = "label"),
+          size = pieLabelSize,
+          data = df[df$ratio >= labelpositionThreshold,],
+          family = family
+        )
+    }
+    else {
+      p1 <- p1 + geom_text(
+        aes_string(x = "labelx", y = "labely",
+                   label = "label"),
+        size = pieLabelSize,
+        data = df,
+        family = family
+      )
+    }
+    if (showPieName)
+      p1 <- p1 + annotate(
+        "text",
+        x = 0,
+        y = 0,
+        label = pies,
+        size = titlesize,
+        family = family
+      )
+    p1 <- p1 + theme(text = element_text(family = family))
+    if (!is.null(donuts)) {
+      if (explodeDonut) {
+        p3 <- p + ggforce::geom_arc_bar(
+          aes_string(
+            x0 = "x",
+            y0 = "y",
+            r0 = as.character(r1),
+            r = as.character(r2),
+            start = "start1",
+            end = "end1",
+            fill = "no",
+            explode = "focus"
+          ),
+          alpha = donutAlpha,
+          color = color,
+          data = df3
+        )
+      }
+      else {
+        p3 <- p + ggforce::geom_arc_bar(
+          aes_string(
+            x0 = "x",
+            y0 = "y",
+            r0 = as.character(r1),
+            r = as.character(r2),
+            start = "start1",
+            end = "end1",
+            fill = "no"
+          ),
+          alpha = donutAlpha,
+          color = color,
+          data = df3
+        )
+      }
+      p3 <-
+        p3 + transparent() + scale_fill_manual(values = subColor) +
+        xlim(r3 * c(-1, 1)) + ylim(r3 * c(-1, 1)) + guides(fill = FALSE)
+      p3
+      if (labelposition == 1) {
+        p3 <- p3 + geom_segment(aes_string(
+          x = "segx",
+          y = "segy",
+          xend = "segxend",
+          yend = "segyend"
+        ),
+        data = df3) + geom_text(
+          aes_string(
+            x = "segxend",
+            y = "segyend",
+            label = "label",
+            hjust = "hjust",
+            vjust = "vjust"
+          ),
+          size = donutLabelSize,
+          data = df3,
+          family = family
+        )
+      }
+      else if (labelposition == 0) {
+        p3 <- p3 + geom_text(
+          aes_string(x = "labelx",
+                     y = "labely", label = "label"),
+          size = donutLabelSize,
+          data = df3,
+          family = family
+        )
+      }
+      else {
+        p3 <- p3 + geom_segment(aes_string(
+          x = "segx",
+          y = "segy",
+          xend = "segxend",
+          yend = "segyend"
+        ),
+        data = df3[df3$ratio1 < labelpositionThreshold,]) + geom_text(
+          aes_string(
+            x = "segxend",
+            y = "segyend",
+            label = "label",
+            hjust = "hjust",
+            vjust = "vjust"
+          ),
+          size = donutLabelSize,
+          data = df3[df3$ratio1 < labelpositionThreshold,],
+          family = family
+        ) + geom_text(
+          aes_string(x = "labelx",
+                     y = "labely", label = "label"),
+          size = donutLabelSize,
+          data = df3[df3$ratio1 >= labelpositionThreshold,],
+          family = family
+        )
+      }
+      if (!is.null(title))
+        p3 <- p3 + annotate(
+          "text",
+          x = 0,
+          y = r3,
+          label = title,
+          size = titlesize,
+          family = family
+        )
+      else if (showDonutName)
+        p3 <- p3 + annotate(
+          "text",
+          x = (-1) * r3,
+          y = r3,
+          label = donuts,
+          hjust = 0,
+          size = titlesize,
+          family = family
+        )
+      p3 <- p3 + theme(text = element_text(family = family))
+      full_pd <- p1 + patchwork::inset_element(
+        p3, left = 0, right = 1, bottom = 0, top = 1)
+      print(full_pd)
+    }
+    else {
+      p1
+    }
+  }
